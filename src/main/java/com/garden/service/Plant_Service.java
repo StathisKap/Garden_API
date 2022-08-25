@@ -2,11 +2,10 @@ package com.garden.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.persistence.EntityNotFoundException;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.garden.exception.PlantNotFound;
 import com.garden.model.Plant;
 import com.garden.repo.Plant_Repo;
 
@@ -23,7 +22,7 @@ public class Plant_Service {
 
 	// getting a specific record by using the method findById() of CrudRepository
 	public Plant get_plant_by_Id(int id) {
-		return plant_Repo.findById(id).orElseThrow(EntityNotFoundException::new);
+		return plant_Repo.findById(id).orElseThrow(PlantNotFound::new);
 	}
 
 	public Plant add_plant(Plant plant) {

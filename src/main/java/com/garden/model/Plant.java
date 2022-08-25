@@ -2,7 +2,6 @@ package com.garden.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -19,7 +18,7 @@ public class Plant {
 		super();
 	}
 
-	public Plant(long id, String name, int temp_needed, int humidity_needed) {
+	public Plant(int id, String name, int temp_needed, int humidity_needed) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -29,8 +28,7 @@ public class Plant {
 
 	@Id
 	@Column
-	@GeneratedValue
-	private long id;
+	private int id;
 	@Column
 	private String name;
 	@Column
@@ -42,7 +40,7 @@ public class Plant {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
