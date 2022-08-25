@@ -7,11 +7,11 @@
 		<version>2.7.3</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>BookShop</artifactId>
+	<groupId>com.garden</groupId>
+	<artifactId>Garden</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>BookShop</name>
-	<description>Demo project for Spring Boot</description>
+	<name>Garden</name>
+	<description>Final Project For The DFe Bootcamp</description>
 	<properties>
 		<java.version>18</java.version>
 	</properties>
