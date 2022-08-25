@@ -5,13 +5,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-
 //mark class as an Entity   
 @Table  
-@AllArgsConstructor
-@NoArgsConstructor
+//@AllArgsConstructor
+//@NoArgsConstructor
 @Entity  
 public class Plant {
 	public Plant() {
@@ -36,7 +33,7 @@ public class Plant {
 	@Column
 	private int humidity_needed;
 
-	public long getId() {
+	public int getId() {
 		return id;
 	}
 
