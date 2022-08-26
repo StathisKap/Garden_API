@@ -13,7 +13,7 @@ import com.garden.repo.Plant_Repo;
 public class Plant_Service {
 	@Autowired
 	Plant_Repo plant_Repo;
-	
+
 	public List<Plant> get_all_plants() {
 		List<Plant> plants = new ArrayList<Plant>();
 		plant_Repo.findAll().forEach(plant -> plants.add(plant));

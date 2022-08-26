@@ -75,7 +75,7 @@ public class GardenApiApplicationTest {
 
     //Unit Test 2
     @Test
-    void test_get_by_Ud() {
+    void test_get_by_Id() {
     	
     	// Setup the mock repo
 

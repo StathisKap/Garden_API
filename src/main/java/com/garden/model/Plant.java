@@ -5,11 +5,11 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-//mark class as an Entity   
-@Table  
+//mark class as an Entity
+@Table
 //@AllArgsConstructor
 //@NoArgsConstructor
-@Entity  
+@Entity
 public class Plant {
 	public Plant() {
 		super();
