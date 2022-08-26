@@ -33,7 +33,7 @@ public class Plant_Service {
 		plant_Repo.deleteById(id);
 	}
 
-	public void update_plant(Plant plant) {
-		plant_Repo.save(plant);
+	public Plant update_plant(Plant plant) {
+		return plant_Repo.save(plant);
 	}
 }

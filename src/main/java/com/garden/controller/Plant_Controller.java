@@ -41,13 +41,14 @@ public class Plant_Controller {
 
 	//creating a delete mapping that deletes a specified plant
 	@DeleteMapping("/plant/{id}")
-	private void deleteBook(@PathVariable("id") int id){
+	private int delete_plant(@PathVariable("id") int id){
 		Plant_Service.remove_plant(id);
+		return id;
 	}
 
 	//creating post mapping that post the plant detail in the database
 	@PostMapping("/plant")
-	private long saveBook(@RequestBody Plant plant){
+	private long save_plant(@RequestBody Plant plant){
 		Plant_Service.add_plant(plant);
 		return plant.getId();
 	}
