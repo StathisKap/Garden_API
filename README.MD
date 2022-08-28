@@ -19,6 +19,16 @@ Swagger is also installed to provide a nice front end for anyone looking to get 
 - Potentially turn it into a Home Assitant addon to be used with my [Garduino](https://github.com/StathisKap/Garduino) project
 
 
+# Risk Assessment
+
+- Considering we are using a SQL database, and receiving data from the user, we should always cleanse their input before using it, otherwise we might be susceptible to an SQL Injection.
+- Another Possible security risk would be if we used HTTP rather than HTTPS in production.
+- Many dependencies on the pom file have their versions hard coded, meaning that they won’t be updated unless that version number is manually changed.
+- We are accessing the DB as the root password, meaning that if we have any other DBs in our MySQL, then someone could access them. Root also uses no password, which is even more of a security threat.
+- Another security thread would be a DOS attack. Since we are not managing the number of requests we are handling any one time, an attacker could easily just overwhelm our application to the point of failure.
+- Lack of TLS can leave the API vulnerable to Man In The Middle attacks.
+
+
 
 # Screenshots
 
