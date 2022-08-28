@@ -2,6 +2,7 @@
 /Users/stathis/.eclipse-workspace/Garden_API/src/main/java/com/garden/exception/PlantNotFound.java
 /Users/stathis/.eclipse-workspace/Garden_API/src/main/java/com/garden/repo/Plant_Repo.java
 /Users/stathis/.eclipse-workspace/Garden_API/src/main/java/com/garden/controller/Exception_Controller.java
+/Users/stathis/.eclipse-workspace/Garden_API/src/main/java/com/garden/model/PlantDTO.java
 /Users/stathis/.eclipse-workspace/Garden_API/src/main/java/com/garden/GardenApiApplication.java
 /Users/stathis/.eclipse-workspace/Garden_API/src/main/java/com/garden/service/Plant_Service.java
 /Users/stathis/.eclipse-workspace/Garden_API/src/main/java/com/garden/model/Plant.java

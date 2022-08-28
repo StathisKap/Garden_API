@@ -188,7 +188,6 @@ public class GardenApiApplicationTest {
 	public void test_remove_plant_by_id() throws Exception {
 
     	int plantid = 2;
-		final Plant newPlant = new Plant( plantid, "Tulip", 20, 70);
 
 			this.mock
 				.perform(request(HttpMethod.DELETE , "/plant/{id}", Long.toString(plantid)))
@@ -198,7 +197,8 @@ public class GardenApiApplicationTest {
 	}
     
   //Integration Test 5
-    @Test
+    @SuppressWarnings("unlikely-arg-type")
+	@Test
 	public void int_test_create_new_plant() throws Exception {
     	long plantid = 1003;
 		final Plant newPlant = new Plant((int) plantid, "Tulip", 20, 70);
@@ -211,7 +211,8 @@ public class GardenApiApplicationTest {
 	}
 
     //Integration Test 6
-    @Test
+    @SuppressWarnings("unlikely-arg-type")
+	@Test
 	public void int_test_update() throws Exception {
     	long plantid = 1003;
 		final Plant newPlant = new Plant((int) plantid, "Tulip", 20, 70);
