@@ -46,3 +46,9 @@ Swagger is also installed to provide a nice front end for anyone looking to get 
 ![PostMan-4](./images/04.png)
 ![PostMan-5](./images/05.png)
 ![PostMan-6](./images/06.png)
+
+### Jira
+
+![Jira-RoadMap](./images/Jira-RoadMap.png)
+![Jira-Backlog](./images/Jira-BackLog.png)
+![Jira-Board](./images/Jira-Board.png)
